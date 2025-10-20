@@ -4,10 +4,10 @@
 <img width="1151" height="724" alt="Screenshot 2025-10-20 193056" src="https://github.com/user-attachments/assets/5f331f02-f388-4d25-a50d-a0d78d366e9f" />
 
 # penjelasan :
-alert() → menampilkan pesan pop-up sambutan.
-prompt() → meminta pengguna mengetik nama.
-document.write() → menampilkan teks hasil di halaman web.
-function sapa() → mendefinisikan fungsi untuk menulis teks motivasi.
+alert() menampilkan pesan pop-up sambutan.
+prompt() meminta pengguna mengetik nama.
+document.write() menampilkan teks hasil di halaman web.
+function sapa() mendefinisikan fungsi untuk menulis teks motivasi.
 
 <img width="659" height="377" alt="Screenshot 2025-10-20 193044" src="https://github.com/user-attachments/assets/0eaeedd5-8d05-4a44-9387-45a34d99fb3b" />
 
