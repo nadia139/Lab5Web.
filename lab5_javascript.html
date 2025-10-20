@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 5 - JavaScript</title>
+</head>
+<body>
+    <h1>Praktikum 5 - JavaScript</h1>
+    <hr>
+
+    <h2>JavaScript Dasar</h2>
+
+    <h3>Contoh Alert</h3>
+    <script>
+        alert("Selamat datang di latihan JavaScript!");
+    </script>
+
+    <h3>Contoh Prompt</h3>
+    <script>
+        var nama = prompt("Masukkan nama kamu:");
+        document.write("Halo, " + nama + "! Selamat belajar JavaScript.<br>");
+    </script>
+
+    <h3>Contoh Fungsi</h3>
+    <script>
+        function sapa() {
+            document.write("Semangat terus ya belajar coding!<br>");
+        }
+        sapa();
+    </script>
+
+    <hr>
+
+    <h2>Dasar Pemrograman di JavaScript</h2>
+
+    <h3>Operasi Aritmatika</h3>
+    <script>
+        var a = 8;
+        var b = 3;
+        document.write("a = " + a + ", b = " + b + "<br>");
+        document.write("Penjumlahan: " + (a + b) + "<br>");
+        document.write("Pengurangan: " + (a - b) + "<br>");
+        document.write("Perkalian: " + (a * b) + "<br>");
+        document.write("Pembagian: " + (a / b).toFixed(2) + "<br>");
+        document.write("Modulus: " + (a % b) + "<br>");
+    </script>
+
+    <h3>Seleksi Kondisi (if..else)</h3>
+    <script>
+        var nilai = 82;
+        var hasil = "";
+        if (nilai >= 90) {
+            hasil = "A (Sangat Baik)";
+        } else if (nilai >= 80) {
+            hasil = "B (Baik)";
+        } else if (nilai >= 70) {
+            hasil = "C (Cukup)";
+        } else if (nilai >= 60) {
+            hasil = "D (Kurang)";
+        } else {
+            hasil = "E (Gagal)";
+        }
+        document.write("Nilai Anda: " + hasil + "<br>");
+    </script>
+
+    <hr>
+
+    <h2>Operator Switch</h2>
+    <script>
+        var hari = new Date().getDay();
+        var namaHari;
+        switch (hari) {
+            case 0: namaHari = "Minggu"; break;
+            case 1: namaHari = "Senin"; break;
+            case 2: namaHari = "Selasa"; break;
+            case 3: namaHari = "Rabu"; break;
+            case 4: namaHari = "Kamis"; break;
+            case 5: namaHari = "Jumat"; break;
+            case 6: namaHari = "Sabtu"; break;
+            default: namaHari = "Tidak diketahui";
+        }
+        document.write("Hari ini adalah: " + namaHari + "<br>");
+    </script>
+
+    <hr>
+
+    <h2>Pembuatan Form</h2>
+    <h3>Form Input Data</h3>
+
+    <form onsubmit="return validasi()">
+        Nama:<br>
+        <input type="text" id="nama"><br><br>
+        Email:<br>
+        <input type="email" id="email"><br><br>
+        Pesan:<br>
+        <textarea id="pesan" rows="4" cols="30" placeholder="Tulis pesan di sini..."></textarea><br><br>
+        <input type="submit" value="Tampilkan Data">
+    </form>
+
+    <p id="hasil"></p>
+
+    <script>
+        function validasi() {
+            var nama = document.getElementById("nama").value;
+            var email = document.getElementById("email").value;
+            var pesan = document.getElementById("pesan").value;
+            var output = document.getElementById("hasil");
+
+            if (nama == "" || email == "" || pesan == "") {
+                alert("Semua kolom wajib diisi!");
+                return false;
+            }
+
+            output.innerHTML = "<b>Data Anda:</b><br>" +
+                "Nama: " + nama + "<br>" +
+                "Email: " + email + "<br>" +
+                "Pesan: " + pesan;
+            return false;
+        }
+    </script>
+
+    <hr>
+
+    <h2>Perhitungan Otomatis (HTML DOM)</h2>
+    <h3>Pilih Buah Favorit</h3>
+
+    <form>
+        <input type="checkbox" class="harga" value="12000" onclick="hitungTotal()"> Apel<br>
+        <input type="checkbox" class="harga" value="15000" onclick="hitungTotal()"> Mangga<br>
+        <input type="checkbox" class="harga" value="10000" onclick="hitungTotal()"> Jeruk<br>
+        <input type="checkbox" class="harga" value="8000" onclick="hitungTotal()"> Pisang<br>
+    </form>
+
+    <p>Total: Rp <span id="total">0</span></p>
+
+    <script>
+        function hitungTotal() {
+            var item = document.getElementsByClassName('harga');
+            var total = 0;
+            for (var i = 0; i < item.length; i++) {
+                if (item[i].checked) total += parseInt(item[i].value);
+            }
+            document.getElementById('total').innerText = total.toLocaleString('id-ID');
+        }
+    </script>
+
+</body>
+</html>
