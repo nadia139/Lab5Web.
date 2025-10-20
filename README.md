@@ -1,5 +1,6 @@
 <img width="1571" height="474" alt="Screenshot 2025-10-20 184625" src="https://github.com/user-attachments/assets/3992c7c9-30c7-433d-9046-17065342d89d" />
 
+## 1.
 <img width="1151" height="724" alt="Screenshot 2025-10-20 193056" src="https://github.com/user-attachments/assets/5f331f02-f388-4d25-a50d-a0d78d366e9f" />
 
 # penjelasan :
@@ -12,6 +13,7 @@ function sapa() → mendefinisikan fungsi untuk menulis teks motivasi.
 
 
 
+## 2.
 <img width="902" height="339" alt="Screenshot 2025-10-20 195408" src="https://github.com/user-attachments/assets/d53486c1-a4c3-444b-b4e1-bf6a1bc32498" />
 
 ## penjelasan
@@ -23,6 +25,7 @@ toFixed(2) membuat hasil pembagian hanya dua angka di belakang koma.
 
 
 
+## 3. 
 <img width="753" height="525" alt="Screenshot 2025-10-20 195720" src="https://github.com/user-attachments/assets/3e1c6d99-245c-4104-a64b-cd6c963c55d6" />
 
 ## penjelasan
@@ -33,6 +36,7 @@ Nilai 82 memenuhi syarat >= 80 sehingga hasilnya “B (Baik)”.
 
 
 
+## 4.
 <img width="1017" height="590" alt="Screenshot 2025-10-20 193208" src="https://github.com/user-attachments/assets/fd3473f7-80d1-4b5b-a448-5889e678fec5" />
 
 ## penjelasan
@@ -52,6 +56,7 @@ Karena saat kode dijalankan sistem mengembalikan angka 1, maka hasilnya "Senin".
 
 
 
+## 5.
 <img width="1334" height="809" alt="Screenshot 2025-10-20 193336" src="https://github.com/user-attachments/assets/e8d34fc3-fe4f-4256-accc-bb6682334c33" />
 
 ## penjelasan
@@ -63,6 +68,7 @@ Kalau sudah diisi, data ditampilkan di bawah form.
 
 
 
+## 6.
 <img width="1232" height="757" alt="Screenshot 2025-10-20 193447" src="https://github.com/user-attachments/assets/7b10f79d-fd7e-47d9-a814-34b0f328fefa" />
 
 ## penjelasan
